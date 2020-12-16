@@ -15,14 +15,31 @@
     background-size: cover;
 
     header {
+        padding-left: 30px;
         margin: 0 auto;
         text-align: center;
 
         ul {
             margin: 0 auto;
-            padding-top: 40px;
+            padding-top: 20px;
             list-style-type: none;
             overflow: hidden;
+
+            span {
+                font-family: 'Raleway', sans-serif;
+                font-size: 34px;
+                font-weight: 400;
+                color: #fff;
+            }
+
+            #logo {
+                margin-right: 150px;
+                font-size: 50px;
+                color: #fff;
+
+
+            }
+
 
             li {
                 display: inline;
@@ -31,8 +48,17 @@
                 a {
                     font-family: 'Montserrat', sans-serif;
                     font-size: 14px;
-                    color: white;
+                    color: #fff;
                     font-weight: 300;
+                }
+            }
+
+            .icoon {
+                font-size: 20px;
+
+                &--zoek {
+                    color: #fff;
+                    margin-left: 100px;
                 }
             }
         }
@@ -69,7 +95,7 @@
 
             h1 {
                 font-family: 'Raleway', sans-serif;
-                color: white;
+                color: #fff;
                 font-weight: 800;
                 font-size: 52px;
                 padding: 15px;
@@ -77,7 +103,7 @@
 
             h2 {
                 font-family: 'Raleway', sans-serif;
-                color: white;
+                color: #fff;
                 font-size: 36px;
                 font-weight: 500;
             }
@@ -85,7 +111,7 @@
             p {
                 font-family: 'Montserrat', sans-serif;
                 font-size: 16px;
-                color: white;
+                color: #fff;
                 font-weight: 300;
                 line-height: 24px;
 
@@ -96,10 +122,10 @@
                 font-family: 'Raleway', sans-serif;
                 font-size: 14px;
                 font-weight: 800;
-                color: white;
+                color: #fff;
                 border-radius: 5px;
                 border: none;
-                background-color: #a57c58;
+                background-color: #998675;
                 padding: 20px 50px;
                 box-shadow: 0 3px #736357;
                 outline: none;
@@ -124,7 +150,7 @@
                 border-radius: 50%;
                 display: inline-block;
                 transition: background-color 0.6s ease;
-                margin-top: 325px;
+                margin-top: 300px;
 
                 &:hover {
                     background-color: #fff;
