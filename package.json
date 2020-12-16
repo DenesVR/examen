@@ -1,0 +1,30 @@
+{
+  "name": "examen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "npm-run-all --parallel sass-dev server-dev",
+    "sass-dev": "sass ./src/css/style.scss ./dist/style.css --watch",
+    "server-dev": "live-server",
+    "build": "npm-run-all --serial clean sass-prod deploy",
+    "clean": "rm -r ./dist/",
+    "sass-prod": "sass ./src/css/style.scss ./dist/style.css --no-source-map --style=compressed",
+    "deploy": "surge . --domain http://examen-denes.surge.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DenesVR/materialize_framework.git"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DenesVR/examen.git"
+  },
+  "author": "DenesVR",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DenesVR/examen/issues"
+  },
+  "homepage": "https://github.com/DenesVR/examen#readme"
+}
