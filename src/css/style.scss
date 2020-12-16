@@ -127,3 +127,68 @@
 
     }
 }
+
+.container2 {
+    widows: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+
+    article {
+        margin: 0 auto;
+        position: relative;
+        width: calc(calc(100%-40px) / 4);
+        margin-bottom: 39px;
+        padding-right: 10px;
+        text-align: center;
+
+        .icoon {
+            fill: #555555;
+        }
+
+        h1 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 22px;
+            color: #555555;
+            font-weight: 600;
+        }
+
+        p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            color: #555555;
+            font-weight: 300;
+            line-height: 24px;
+        }
+
+        &:hover {
+            .icoon {
+                fill: #998675;
+            }
+
+            h1 {
+                color: #998675;
+            }
+
+            p {
+                color: #998675;
+            }
+        }
+    }
+
+    article.active {
+
+        .icoon {
+            fill: #998675;
+        }
+
+        h1 {
+            color: #998675;
+        }
+
+        p {
+            color: #998675;
+        }
+
+    }
+}
