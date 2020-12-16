@@ -3,6 +3,8 @@
 @import "./base/variables";
 @import "./base/mixins";
 
+@import url("../icons/style.css");
+
 
 .container {
     width: 100%;
@@ -46,13 +48,17 @@
             position: absolute;
 
             &--links {
-                left: 5%;
-                fill: #8c8c8c;
+                font-size: 72px;
+                top: 400px;
+                left: 150px;
+                color: #8c8c8c;
             }
 
             &--rechts {
-                right: 5%;
-                fill: #8c8c8c;
+                font-size: 72px;
+                top: 400px;
+                right: 150px;
+                color: #8c8c8c;
             }
 
         }
@@ -96,6 +102,11 @@
                 background-color: #a57c58;
                 padding: 20px 50px;
                 box-shadow: 0 3px #736357;
+                outline: none;
+
+                &:active {
+                    transform: translateY(1px);
+                }
             }
 
 
@@ -114,6 +125,10 @@
                 display: inline-block;
                 transition: background-color 0.6s ease;
                 margin-top: 325px;
+
+                &:hover {
+                    background-color: #fff;
+                }
             }
 
             .dot:nth-child(2) {
@@ -130,40 +145,81 @@
 
 .container2 {
     widows: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    margin: 0 370px;
 
+    .rij {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 80px;
 
-    article {
-        margin: 0 auto;
-        position: relative;
-        width: calc(calc(100%-40px) / 4);
-        margin-bottom: 39px;
-        padding-right: 10px;
-        text-align: center;
+        article {
+            margin: 0 auto;
+            position: relative;
+            width: 270px;
+            margin-bottom: 39px;
+            padding-right: 10px;
+            text-align: center;
 
-        .icoon {
-            fill: #555555;
-        }
-
-        h1 {
-            font-family: 'Raleway', sans-serif;
-            font-size: 22px;
-            color: #555555;
-            font-weight: 600;
-        }
-
-        p {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 14px;
-            color: #555555;
-            font-weight: 300;
-            line-height: 24px;
-        }
-
-        &:hover {
             .icoon {
-                fill: #998675;
+                align-items: center;
+                font-size: 48px;
+
+                &--penseel {
+                    color: #555555;
+                }
+
+                &--lagen {
+                    color: #555555;
+                }
+
+                &--wiel {
+                    color: #555555;
+                }
+
+                &--tas {
+                    color: #555555;
+                }
+            }
+
+            h1 {
+                font-family: 'Raleway', sans-serif;
+                font-size: 22px;
+                color: #555555;
+                font-weight: 600;
+                padding: 15px 0;
+            }
+
+            p {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 14px;
+                color: #555555;
+                font-weight: 300;
+                line-height: 24px;
+            }
+
+            &:hover {
+                .icoon {
+                    color: #998675;
+                }
+
+                h1 {
+                    color: #998675;
+                }
+
+                p {
+                    color: #998675;
+                }
+            }
+        }
+
+        article:nth-of-type(3n + 0) {
+            padding-right: 0;
+        }
+
+        article.active {
+
+            .icoon {
+                color: #998675;
             }
 
             h1 {
@@ -173,22 +229,7 @@
             p {
                 color: #998675;
             }
+
         }
-    }
-
-    article.active {
-
-        .icoon {
-            fill: #998675;
-        }
-
-        h1 {
-            color: #998675;
-        }
-
-        p {
-            color: #998675;
-        }
-
     }
 }
